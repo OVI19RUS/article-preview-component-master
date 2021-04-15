@@ -1,0 +1,120 @@
+body {background-color: hsl(210, 46%, 95%);
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    height: 100vh;
+    font-weight: 500;
+    max-width: 1440px;
+}
+
+.div {display: flex;
+flex-direction: row;
+justify-content: center;
+margin: 20% 20%;
+align-items: stretch;
+}
+
+.right {background-color: white;
+padding: 3% 7%;
+margin-left: -4%;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;}
+
+.Drawer {width: 100%;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;}
+
+h2 {color: hsl(217, 19%, 35%);}
+
+.description {color: hsl(214, 17%, 51%);
+margin-top: 6%;}
+
+.avatar {width: 10%;
+float: left;
+border-radius: 50%;}
+
+.bottom {margin-top: 10%;}
+
+.name-text {margin-left: 15%;
+    color: hsl(217, 19%, 35%);
+font-weight: 700;
+line-height: 1.8;}
+
+.Share {display: inline;
+float: right;
+margin-top: -11%;
+margin-right: 11%;}
+
+.Share-icon {background: hsl(210, 46%, 95%);
+    border: 10px solid;
+    border-color: hsl(210, 46%, 95%);
+border-radius: 50%;
+width: 60%;}
+
+.Share-icon-popup {background: hsl(212, 23%, 69%);
+border-color: hsl(212, 23%, 69%);
+}
+
+.PopUp {position: absolute;
+margin-top: -23%;
+margin-left: 48%;
+background-color: hsl(217, 19%, 35%);
+color: hsl(210, 46%, 95%);
+display: flex;
+padding: 0.5% 2%;
+border-radius: 5px;
+}
+
+.Share-2 {display: none;}
+
+.Text {letter-spacing: 4px;
+    margin-right: 15px;}
+
+.Facebook {margin-right: 10px;}
+.Twitter {margin-right: 10px;}
+
+footer { font-size: 11px; text-align: center; 
+    bottom: 0;}
+footer a { color: hsl(228, 45%, 44%);}
+
+@media (max-width:550px){
+    .div {flex-wrap: wrap;
+    margin: 17% 6%;}
+
+    .Drawer {border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+    .right {border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+        margin-left: 0;
+        padding: 6% 6% 5%;}
+
+    .avatar {width: 14%;}
+
+    .Share {margin-top: -18%;
+    margin-right: 5%;}
+
+    .bottom {margin-top: 10%;}
+
+    .name-text {margin-left: 20%;}
+
+    .PopUp {
+        margin-top: -38%;
+        margin-left: 5.8%;
+        padding: 7% 8.7% 8% 5%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    
+    .Text {letter-spacing: 8px;
+    margin-right: 31px;}
+
+    .Facebook {margin-right: 10px;}
+    .Twitter {margin-right: 10px;}
+
+    .Share-2 {margin-left: 66px;
+    margin-top: -11px;
+    width: 34px;
+    display: block;}
+}
