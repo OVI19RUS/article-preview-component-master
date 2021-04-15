@@ -106,7 +106,8 @@ footer a { color: hsl(228, 45%, 44%);}
         margin-left: 0;
         padding: 6% 6% 5%;}
 
-    .avatar {width: 14%;}
+    .avatar {width: 14%;
+    margin-top: 4%;}}
 
     .Share {margin-top: -18%;
     margin-right: 5%;}
