@@ -5,42 +5,47 @@ body {background-color: hsl(210, 46%, 95%);
     font-weight: 500;
 }
 
-.div {display: flex;
+.container {display: flex;
 flex-direction: row;
 justify-content: center;
-margin: 12% 30%;
+margin: 12% 27%;
 max-width: 1440px;
 }
 
+.left {width: 100%;}
+
 .right {background-color: white;
-padding: 3% 7%;
-margin-left: -4%;
+display: flex;
+flex-direction: column;
+padding: 3% 7% 1%;
+margin-left: -5%;
 border-top-right-radius: 10px;
 border-bottom-right-radius: 10px;}
 
-.Drawer {width: 400px;
+.Drawer {width: 100%;
+    height: 100%;
 border-top-left-radius: 10px;
 border-bottom-left-radius: 10px;}
 
 h2 {color: hsl(217, 19%, 35%);}
 
 .description {color: hsl(214, 17%, 51%);
-margin-top: 6%;}
+margin: auto;}
 
-.avatar {width: 45px;
+.bottom {margin-top: auto;}
+
+.avatar {width:15%;
 float: left;
 border-radius: 50%;}
 
-.bottom {margin-top: 50px;}
-
-.name-text {margin-left: 70px;
-    color: hsl(217, 19%, 35%);
-font-weight: 700;
-line-height: 1.8;}
+.name-text {margin-left: 25%; 
+color: hsl(217, 19%, 35%);
+    font-weight: 700;
+    line-height: 1.8;}
 
 .Share {display: inline;
 float: right;
-margin-top: -20%;}
+margin-top: -13%;}
 
 .Share-icon {background: hsl(210, 46%, 95%);
     border: 10px solid;
@@ -77,13 +82,24 @@ footer {position: absolute;
     bottom: 0;}
 footer a { color: hsl(228, 45%, 44%);}
 
+@media (max-width: 1440px){
+    .container {margin: 12% 15% 6%;} 
+
+    .Drawer {width: 100%;}
+
+    .Share {margin-top: -10%;
+    margin-right: 5%;}
+
+    .right {padding: 3% 4%;;}
+}
+
 @media (max-width:550px){
-    .div {flex-wrap: wrap;
+    .container {flex-wrap: wrap;
     margin: 17% 6%;}
 
     .Drawer {border-top-right-radius: 10px;
         border-bottom-left-radius: 0px;
-        width: 350px;
+        width: 100%;
     }
     .right {border-top-right-radius: 0;
         border-bottom-left-radius: 10px;
