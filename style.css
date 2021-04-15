@@ -3,7 +3,6 @@ body {background-color: hsl(210, 46%, 95%);
     font-size: 13px;
     height: 100vh;
     font-weight: 500;
-    overflow: hidden;
 }
 
 .div {display: flex;
@@ -71,7 +70,7 @@ border-radius: 5px;
 .Facebook {margin-right: 10px;}
 .Twitter {margin-right: 10px;}
 
-footer { position: absolute;
+footer {position: absolute;
     width: 100%;
     font-size: 11px; 
     text-align: center; 
@@ -120,4 +119,6 @@ footer a { color: hsl(228, 45%, 44%);}
     margin-top: -12px;
     width: 34px;
     display: block;}
+
+    footer {position: static;}
 }
