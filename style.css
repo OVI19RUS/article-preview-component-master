@@ -32,20 +32,20 @@ h2 {color: hsl(217, 19%, 35%);}
 .description {color: hsl(214, 17%, 51%);
 margin: auto;}
 
-.bottom {margin-top: auto;}
+.bottom {margin-top: auto;
+display: flex;
+align-items: center;}
 
-.avatar {width:15%;
+.avatar {width:12%;
 float: left;
 border-radius: 50%;}
 
-.name-text {margin-left: 25%; 
+.name-text {margin-left: 10%; 
 color: hsl(217, 19%, 35%);
     font-weight: 700;
     line-height: 1.8;}
 
-.Share {display: inline;
-float: right;
-margin-top: -13%;}
+.Share {margin-left: auto;}
 
 .Share-icon {background: hsl(210, 46%, 95%);
     border: 10px solid;
@@ -58,11 +58,12 @@ border-color: hsl(212, 23%, 69%);
 }
 
 .PopUp {position: absolute;
-margin-top: -20%;
-margin-left: 60%;
+margin-top: -19%;
+margin-left: 62%;
 background-color: hsl(217, 19%, 35%);
 color: hsl(210, 46%, 95%);
 display: flex;
+align-items: center;
 padding: 0.5% 2%;
 border-radius: 5px;
 }
@@ -87,9 +88,6 @@ footer a { color: hsl(228, 45%, 44%);}
 
     .Drawer {width: 100%;}
 
-    .Share {margin-top: -10%;
-    margin-right: 5%;}
-
     .right {padding: 3% 4%;;}
 }
 
@@ -104,22 +102,16 @@ footer a { color: hsl(228, 45%, 44%);}
     .right {border-top-right-radius: 0;
         border-bottom-left-radius: 10px;
         margin-left: 0;
-        padding: 6% 6% 5%;}
+        padding: 6% 6% 1%;}
 
-    .avatar {width: 14%;
-    margin-top: 4%;}}
-
-    .Share {margin-top: -18%;
-    margin-right: 5%;}
+    .avatar {width: 14%;}
 
     .bottom {margin-top: 10%;}
 
-    .name-text {margin-left: 20%;}
-
     .PopUp {
-        margin-top: -38%;
+        margin-top: -36%;
         margin-left: 5.8%;
-        padding: 7% 8.9% 7.3% 5%;
+        padding: 6% 24% 6% 5.6%;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
         border-top-left-radius: 0;
@@ -132,10 +124,8 @@ footer a { color: hsl(228, 45%, 44%);}
     .Facebook {margin-right: 10px;}
     .Twitter {margin-right: 10px;}
 
-    .Share-2 {margin-left: 66px;
-    margin-top: -12px;
-    width: 34px;
-    display: block;}
+    .Share-2 {display: inline-block;
+    margin-left: 36%;}
 
     footer {position: static;}
 }
