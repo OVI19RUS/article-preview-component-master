@@ -45,8 +45,6 @@ color: hsl(217, 19%, 35%);
     font-weight: 700;
     line-height: 1.8;}
 
-.Share {margin-left: auto;}
-
 .Share-icon {background: hsl(210, 46%, 95%);
     border: 10px solid;
     border-color: hsl(210, 46%, 95%);
@@ -57,21 +55,54 @@ width: 60%;}
 border-color: hsl(212, 23%, 69%);
 }
 
-.PopUp {position: absolute;
-margin-top: -19%;
-margin-left: 62%;
-background-color: hsl(217, 19%, 35%);
-color: hsl(210, 46%, 95%);
-display: flex;
-align-items: center;
-padding: 0.5% 2%;
-border-radius: 5px;
-}
+/* Container */
+.popup {
+    position: relative;
+    margin-left: auto;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: hsl(217, 19%, 35%);
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px 0 15px 20px;
+    position: absolute;
+    z-index: 1;
+    bottom: 165%;
+    left: 50%;
+    margin-left: -105px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -15px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    animation: fadeIn 1s;
+  }
 
 .Share-2 {display: none;}
 
-.Text {letter-spacing: 4px;
-    margin-right: 15px;}
+.Text {letter-spacing: 6px;
+    margin-right: 20px;}
 
 .Facebook {margin-right: 10px;}
 .Twitter {margin-right: 10px;}
@@ -108,16 +139,18 @@ footer a { color: hsl(228, 45%, 44%);}
 
     .bottom {margin-top: 10%;}
 
-    .PopUp {
-        margin-top: -36%;
-        margin-left: 5.8%;
-        padding: 6% 24% 6% 5.6%;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
+    .popup .popuptext::after { 
+        visibility: hidden;}
+
+    .popup .popuptext {
+      margin-left: -279.5px;
+      margin-bottom: -88px;
+      width: 296px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      padding-bottom: 18.4px;
     }
-    
+
     .Text {letter-spacing: 8px;
     margin-right: 31px;}
 
@@ -125,7 +158,7 @@ footer a { color: hsl(228, 45%, 44%);}
     .Twitter {margin-right: 10px;}
 
     .Share-2 {display: inline-block;
-    margin-left: 36%;}
+    margin-left: 16.8%;}
 
     footer {position: static;}
 }
