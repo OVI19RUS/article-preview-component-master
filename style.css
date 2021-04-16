@@ -73,12 +73,13 @@ border-color: hsl(212, 23%, 69%);
     border-radius: 10px;
     padding: 15px 0 15px 20px;
     position: absolute;
-    z-index: 1;
     bottom: 165%;
     left: 50%;
     margin-left: -105px;
     display: flex;
     align-items: center;
+    letter-spacing: 6px;
+    gap: 20px;
   }
   
   /* Popup arrow */
@@ -96,16 +97,9 @@ border-color: hsl(212, 23%, 69%);
   /* Toggle this class - hide and show the popup */
   .popup .show {
     visibility: visible;
-    animation: fadeIn 1s;
   }
 
 .Share-2 {display: none;}
-
-.Text {letter-spacing: 6px;
-    margin-right: 20px;}
-
-.Facebook {margin-right: 10px;}
-.Twitter {margin-right: 10px;}
 
 footer {position: absolute;
     width: 100%;
@@ -149,16 +143,12 @@ footer a { color: hsl(228, 45%, 44%);}
       border-top-left-radius: 0;
       border-top-right-radius: 0;
       padding-bottom: 18.4px;
+      gap: 10px;
+      letter-spacing: 8px;
     }
 
-    .Text {letter-spacing: 8px;
-    margin-right: 31px;}
-
-    .Facebook {margin-right: 10px;}
-    .Twitter {margin-right: 10px;}
-
     .Share-2 {display: inline-block;
-    margin-left: 16.8%;}
+    margin-left: 20.5%;}
 
     footer {position: static;}
 }
