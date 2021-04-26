@@ -75,7 +75,7 @@ border-color: hsl(212, 23%, 69%);
     position: absolute;
     bottom: 165%;
     left: 50%;
-    margin-left: -105px;
+    margin-left: -115px;
     display: flex;
     align-items: center;
     letter-spacing: 6px;
@@ -139,7 +139,7 @@ footer a { color: hsl(228, 45%, 44%);}
     .popup .popuptext {
       margin-left: -279.5px;
       margin-bottom: -88px;
-      width: 296px;
+      width: 276px;
       border-top-left-radius: 0;
       border-top-right-radius: 0;
       padding-bottom: 18.4px;
@@ -148,7 +148,7 @@ footer a { color: hsl(228, 45%, 44%);}
     }
 
     .Share-2 {display: inline-block;
-    margin-left: 20.5%;}
+    margin-left: 22%;}
 
     footer {position: static;}
 }
