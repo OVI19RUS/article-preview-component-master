@@ -5,25 +5,30 @@ body {background-color: hsl(210, 46%, 95%);
     font-weight: 500;
 }
 
-.container {display: flex;
-flex-direction: row;
-justify-content: center;
-margin: 12% 27%;
-max-width: 1440px;
+main { max-width: 1440px;
+    margin: 0;
+    margin-left: auto;
+margin-right: auto;
 }
 
-.left {width: 100%;}
+.container {display: flex;
+max-width: 790px;
+margin-top: 20rem;
+margin-left: auto;
+margin-right: auto;
+max-height: 300px;
+}
 
 .right {background-color: white;
 display: flex;
 flex-direction: column;
-padding: 3% 7% 1%;
-margin-left: -5%;
+margin-left: -4.5rem;
+padding: 2rem 3rem 2rem 3rem;
 border-top-right-radius: 10px;
 border-bottom-right-radius: 10px;}
 
-.Drawer {width: 100%;
-    height: 100%;
+.Drawer {width: 400px;
+    height: 300px;
 border-top-left-radius: 10px;
 border-bottom-left-radius: 10px;}
 
@@ -32,24 +37,24 @@ h2 {color: hsl(217, 19%, 35%);}
 .description {color: hsl(214, 17%, 51%);
 margin: auto;}
 
-.bottom {margin-top: auto;
+.bottom {margin-top: 0.5rem;
 display: flex;
 align-items: center;}
 
-.avatar {width:12%;
+.avatar {width:10%;
 float: left;
 border-radius: 50%;}
 
-.name-text {margin-left: 10%; 
+.name-text {margin-left: 1.45rem; 
 color: hsl(217, 19%, 35%);
     font-weight: 700;
-    line-height: 1.8;}
+    line-height: 1.6;}
 
 .Share-icon {background: hsl(210, 46%, 95%);
     border: 10px solid;
     border-color: hsl(210, 46%, 95%);
 border-radius: 50%;
-width: 60%;}
+width: 50%;}
 
 .Share-icon-popup {background: hsl(212, 23%, 69%);
 border-color: hsl(212, 23%, 69%);
@@ -66,7 +71,7 @@ border-color: hsl(212, 23%, 69%);
   /* The actual popup */
   .popup .popuptext {
     visibility: hidden;
-    width: 200px;
+    width: 12.5rem;
     background-color: hsl(217, 19%, 35%);
     color: #fff;
     text-align: center;
@@ -75,7 +80,7 @@ border-color: hsl(212, 23%, 69%);
     position: absolute;
     bottom: 165%;
     left: 50%;
-    margin-left: -115px;
+    margin-left: -7.4rem;
     display: flex;
     align-items: center;
     letter-spacing: 6px;
@@ -108,14 +113,6 @@ footer {position: absolute;
     bottom: 0;}
 footer a { color: hsl(228, 45%, 44%);}
 
-@media (max-width: 1440px){
-    .container {margin: 12% 15% 6%;} 
-
-    .Drawer {width: 100%;}
-
-    .right {padding: 3% 4%;;}
-}
-
 @media (max-width:550px){
     .container {flex-wrap: wrap;
     margin: 17% 6%;}
@@ -124,10 +121,16 @@ footer a { color: hsl(228, 45%, 44%);}
         border-bottom-left-radius: 0px;
         width: 100%;
     }
+
+    h2 {font-size: 16px;}
+
     .right {border-top-right-radius: 0;
         border-bottom-left-radius: 10px;
         margin-left: 0;
-        padding: 6% 6% 1%;}
+        padding: 6% 10% 1%;
+    margin-top: -3.5rem;}
+
+    .description {line-height: 1.5;}
 
     .avatar {width: 14%;}
 
@@ -137,18 +140,15 @@ footer a { color: hsl(228, 45%, 44%);}
         visibility: hidden;}
 
     .popup .popuptext {
-      margin-left: -279.5px;
-      margin-bottom: -88px;
-      width: 276px;
+      margin-left: -16.68rem;
+      margin-bottom: -5.2rem;
+      width: 17.25rem;
       border-top-left-radius: 0;
       border-top-right-radius: 0;
-      padding-bottom: 18.4px;
       gap: 10px;
       letter-spacing: 8px;
     }
 
     .Share-2 {display: inline-block;
     margin-left: 22%;}
-
-    footer {position: static;}
 }
